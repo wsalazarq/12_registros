@@ -39,6 +39,20 @@ int main(){
         cout<<endl<<"Salario: "<<EMPLEADO[i].salario<<endl;
         cout<<endl; 
     }
+
+    int maxVenA = 0, pos = 0;
     
+    for (int i = 0; i < n; i++){
+        int VenA = 0;
+
+        for (int j = 0; j < 12; j++){
+            VenA = VenA + EMPLEADO[i].ventas[j];
+        }
+
+        if (VenA > maxVenA){
+            maxVenA = VenA;
+            pos = i;
+        }
+       
     return 0; 
 }
