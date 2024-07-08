@@ -62,6 +62,15 @@ int main(){
     cout<<"Venta Anual Maxima"<<endl;
     cout<<"Numero: "<<EMPLEADO[pos].numero<<endl;
     cout<<"Nombre: "<<EMPLEADO[pos].nombre<<endl;
-    
+
+    cout<<"Ventas menores a 30 unidades en el mes de diciembre: "<<endl;
+    for (int i = 0; i < n; i++){
+        int ventasI = EMPLEADO[i].ventas[11];
+
+        if (ventasI < 30){
+            cout<<"Numero: "<<EMPLEADO[i].numero<<endl;
+            cout<<"Nombre: "<<EMPLEADO[i].nombre<<endl;
+        }
+    }
     return 0; 
 }
