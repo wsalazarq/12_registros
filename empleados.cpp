@@ -54,5 +54,14 @@ int main(){
             pos = i;
         }
        
+       if (VenA > 100){
+            EMPLEADO[i].salario = EMPLEADO[i].salario * 1.10;
+        }
+    }
+
+    cout<<"Venta Anual Maxima"<<endl;
+    cout<<"Numero: "<<EMPLEADO[pos].numero<<endl;
+    cout<<"Nombre: "<<EMPLEADO[pos].nombre<<endl;
+    
     return 0; 
 }
