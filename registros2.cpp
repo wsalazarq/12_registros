@@ -22,5 +22,13 @@ int main(){
         cout<<endl;
     }
     
+    int c = 0;
+    for (int i = 0; i < n; i++){
+        if (Datos[i].edad > 50){
+            c = c + 1;
+        }
+    }
+    cout<<"Personas mayores a 50 años: "<<c<<endl;
+    
     return 0; 
 }
