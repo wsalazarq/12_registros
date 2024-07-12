@@ -22,7 +22,8 @@ int main(){
         cout<<endl;
     }
     
-    int c = 0, sumaEdades = 0;
+    int c = 0;
+    float sumaEdades = 0;
     for (int i = 0; i < n; i++){
         sumaEdades = sumaEdades + Datos[i].edad;
         
@@ -30,9 +31,17 @@ int main(){
             c = c + 1;
         }
     }
-    int promedio = sumaEdades / n;
+    float promedio = sumaEdades / n;
 
     cout<<"Personas mayores a 50 años: "<<c<<endl;
     cout<<"Promedio de edades: "<<promedio<<endl;
+    cout<<endl;
+
+    for (int i = 0; i < n; i++){
+        cout<<"Nombre de la persona "<<i + 1<<" : "<<Datos[i].nombre<<endl;
+        cout<<"DNI de la persona "<<i + 1<<" : "<<Datos[i].DNI<<endl;
+        cout<<"Edad de la persona "<<i + 1<<" : "<<Datos[i].edad<<endl;
+        cout<<endl;
+    }
     return 0; 
 }
