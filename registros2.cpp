@@ -22,13 +22,17 @@ int main(){
         cout<<endl;
     }
     
-    int c = 0;
+    int c = 0, sumaEdades = 0;
     for (int i = 0; i < n; i++){
+        sumaEdades = sumaEdades + Datos[i].edad;
+        
         if (Datos[i].edad > 50){
             c = c + 1;
         }
     }
+    int promedio = sumaEdades / n;
+
     cout<<"Personas mayores a 50 años: "<<c<<endl;
-    
+    cout<<"Promedio de edades: "<<promedio<<endl;
     return 0; 
 }
