@@ -23,6 +23,20 @@ int main(){
         cout<<endl;
     }
 
+    string paisIngresado;
+    cout<<"Ingrese un pais: ";cin>>paisIngresado;
 
+    bool encontrado = false;
+
+    for (int i = 0; i < n; i++){
+        if (atletas[i].pais == paisIngresado){
+            encontrado = true;
+            cout<<"Nombre: "<<atletas[i].nombres<<endl;
+            cout<<"Pais: "<<atletas[i].pais<<endl;
+            cout<<"Disciplina: "<<atletas[i].disciplina<<endl;
+            cout<<"Numero de medallas: "<<atletas[i].numMedallas<<endl;
+            cout<<endl;
+        }
+    }
     return 0;
 }
